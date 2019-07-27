@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS -->
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="layout.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper_pk">
+
+		<!-- bg color -->
+		<div class="bg-sm"></div>
+
+		<div class="row">
+
+			<!-- input -->
+			<div class="col-sm-5 col-sm-push-1">
+				<div class="area-input">
+					<div class="input">
+						<form>
+							<input class="text" type="text" placeholder="ADD A NEW MESSION">
+							<input type="submit" value="+">
+						</form>
+					</div>
+				</div>
+
+				<div class="area-nowdo">
+					<div class="check">
+						<div class="check-box"></div>
+						<div class="check-inside">
+							<h3 class="inside__text">THE FIRST THING TO DO TODAY</h3>
+							<div class="inside__circle"></div>
+						</div>
+						<div class="big-number">25:00</div>	
+					</div>
+				</div>
+
+				<div class="area-list">
+					<div class="list_inside">
+						<div class="list__check-box"></div>
+						<div class="list__text">THE SECOND THING TO DO TODAY</div>
+						<div class="list__play">
+							<i class="list__play-btn icon material-icons">play_arrow</i>
+						</div>
+					</div>
+					<div class="list__line"></div>
+					<div class="list_inside">
+						<div class="list__check-box"></div>
+						<div class="list__text">THE THRID THING TO DO TODAY</div>
+						<div class="list__play">
+							<i class="list__play-btn icon material-icons">play_arrow</i>
+						</div>
+					</div>
+					<div class="list__line"></div>
+					<div class="list_inside">
+						<div class="list__check-box"></div>
+						<div class="list__text">THE FOURTH THING TO DO TODAY</div>
+						<div class="list__play">
+							<i class="list__play-btn icon material-icons">play_arrow</i>
+						</div>
+					</div>
+					<div class="list__line"></div>
+				</div>
+			</div>	
+
+			<!-- play circle -->
+			<div class="col-sm-6">
+				<div class="play-circle">
+					<div class="circle-line">
+						<div class="circle">
+							<div class="play-button">
+								<i class="icon material-icons">play_arrow</i>
+							</div>
+							<div class="play-square"></div>
+						</div>	
+					</div>
+				</div>	
+			</div>
+
+			<!-- side bar -->
+			<div class="col-sm-1">
+				<div class="side-bar u-clearfix">
+					<div class="side__icon-group">
+						<a href="#overlay__list" class="icon-btn">
+							<i class="icon material-icons">list</i>
+						</a>
+						<a href="#overlay__chart" class="icon-btn">
+							<i class="icon material-icons">insert_chart</i>
+						</a>
+
+						<a href="#overlay__music" class="icon-btn">
+							<i class="icon material-icons">library_music</i>
+						</a>
+
+						<!-- list overlay -->
+						<div id="overlay__list" class="pop-up">
+
+							<!-- overlay left -->
+							<div class="col-sm-4 col-sm-push-1">
+
+								<!-- top -->
+								<div class="overlay__side-nav">
+									<div class="side-nav__todo-list side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons u-now-page_color">list</i>
+											<h3 class="u-now-page_color">TO-DO LIST</h3>
+										</a>	
+									</div>
+									<div class="side-nav__chart side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons">insert_chart</i>
+											<h3>ANALYTICS</h3>
+										</a>	
+									</div>
+									<div class="side-nav__music side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons">library_music</i>
+											<h3>RINGTONES</h3>
+										</a>	
+									</div>
+								</div>
+								
+								<!-- bottom -->
+								<div class="overlay__circle-set">
+									<div class="circle-set__small-circle">
+										<div class="small-circle__out-circle">
+											<div class="small-circle__in-circle">
+												<i class="icon material-icons">play_arrow</i>
+											</div>	
+										</div>
+									</div>
+									<div class="circle-set__big-circle">
+										<h4 class="time">25:00</h4>
+										<p>THE FIRST THING TO DO TODAY</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- overlay center -->
+							<div class="col-sm-4 col-sm-push-1">
+
+								<!-- input -->
+								<div class="overlay__input">
+									<form>
+										<input class="text" type="text" placeholder="ADD A NEW MESSION">
+										<input type="submit" value="+">
+									</form>
+								</div>
+								
+								<!-- doing list -->
+								<div class="overlay__items-group">
+									<div class="items__to-do items">
+
+										<div class="to-do__title item-title">
+											<h4 class="title">TO-DO</h4>
+										</div>
+
+										<div class="to-do__items">
+											<div class="to-do__item item">
+												<div class="item__check-box"></div>
+												<div class="item__text">THE SECOND THING TO DO TODAY</div>
+												<div class="item__play">
+													<i class="item__play-btn icon material-icons">play_arrow</i>
+												</div>
+											</div>
+											<div class="item__line"></div>
+											<div class="to-do__item item">
+												<div class="item__check-box"></div>
+												<div class="item__text">THE THIRD THING TO DO TODAY</div>
+												<div class="item__play">
+													<i class="item__play-btn icon material-icons">play_arrow</i>
+												</div>
+											</div>
+											<div class="item__line"></div>
+											<div class="to-do__item item">
+												<div class="item__check-box"></div>
+												<div class="item__text">THE FOURTH THING TO DO TODAY</div>
+												<div class="item__play">
+													<i class="item__play-btn icon material-icons">play_arrow</i>
+												</div>
+											</div>
+											<div class="item__line"></div>
+											<div class="to-do__item item">
+												<div class="item__check-box"></div>
+												<div class="item__text">THE FOURTH THING TO DO TODAY</div>
+												<div class="item__play">
+													<i class="item__play-btn icon material-icons">play_arrow</i>
+												</div>
+											</div>
+											<div class="item__line"></div>
+										</div>
+									</div>
+
+									<div class="items__done items">
+
+										<div class="done__title item-title">
+											<h4 class="title">DONE</h4>
+										</div>
+
+										<div class="done__items">
+											<div class="done__item item">
+												<div class="item__check-box">
+													<i class="material-icons item__check-icon">check</i>
+												</div>
+												<div class="item__text">THE SECOND THING TO DO TODAY</div>
+												<div class="item__finish">
+													<div class="item__finish-circle"></div>
+													<div class="item__finish-circle"></div>
+													<div class="item__finish-circle"></div>
+												</div>
+											</div>
+											<div class="item__line"></div>
+											<div class="done__item item">
+												<div class="item__check-box">
+													<i class="material-icons item__check-icon">check</i>
+												</div>
+												<div class="item__text">THE THIRD THING TO DO TODAY</div>
+												<div class="item__finish">
+													<div class="item__finish-circle"></div>
+												</div>
+											</div>
+											<div class="item__line"></div>
+											<div class="done__item item">
+												<div class="item__check-box">
+													<i class="material-icons item__check-icon">check</i>
+												</div>
+												<div class="item__text">THE FOURTH THING TO DO TODAY</div>
+												<div class="item__finish">
+													<div class="item__finish-circle"></div>
+													<div class="item__finish-circle"></div>
+												</div>
+											</div>
+											<div class="item__line"></div>
+											
+										</div>
+									</div>
+								</div>
+
+							</div>
+							
+							<!-- overlay right -->
+							<a href="#!" class="popup-close">
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+
+						<!-- chart overlay -->
+						<div id="overlay__chart" class="pop-up overlay__chart">
+
+							<!-- overlay left -->
+							<div class="col-sm-4 col-sm-push-1">
+
+								<!-- top -->
+								<div class="overlay__side-nav">
+									<div class="side-nav__todo-list side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons">list</i>
+											<h3>TO-DO LIST</h3>
+										</a>	
+									</div>
+									<div class="side-nav__chart side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons u-now-page_color">insert_chart</i>
+											<h3 class="u-now-page_color">ANALYTICS</h3>
+										</a>	
+									</div>
+									<div class="side-nav__music side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons">library_music</i>
+											<h3>RINGTONES</h3>
+										</a>	
+									</div>
+								</div>
+								
+								<!-- bottom -->
+								<div class="overlay__circle-set">
+									<div class="circle-set__small-circle">
+										<div class="small-circle__out-circle">
+											<div class="small-circle__in-circle">
+												<i class="icon material-icons">play_arrow</i>
+											</div>	
+										</div>
+									</div>
+									<div class="circle-set__big-circle">
+										<h4 class="time">25:00</h4>
+										<p>THE FIRST THING TO DO TODAY</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- overlay center -->
+							<div class="col-sm-4 col-sm-push-1">
+								<div class="overlay__analytics">
+									<div class="analytics__focus-time">
+										<div class="focus-time__title item-title">
+											<h4 class="title">FOCUS TIME</h4>
+										</div>
+										<div class="focus-time__in">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="focus-in__subtitle">TODAY</div>
+													<div class="focus-in__times">
+														<div class="big-number">20</div>
+														<div class="unit">/TOMATO</div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="focus-in__subtitle">WEEK</div>
+													<div class="focus-in__times">
+														<div class="big-number">108</div>
+														<div class="unit">/TOMATO</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="analytics__chart">
+										<div class="chart__title item-title">
+											<h4 class="title">CHART</h4>
+										</div>
+										<div class="chart__in">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#!" class="popup-close">
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+
+						<!-- music overlay -->
+						<div id="overlay__music" class="pop-up overlay__music">
+
+							<!-- overlay left -->
+							<div class="col-sm-4 col-sm-push-1">
+
+								<!-- top -->
+								<div class="overlay__side-nav">
+									<div class="side-nav__todo-list side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons">list</i>
+											<h3>TO-DO LIST</h3>
+										</a>	
+									</div>
+									<div class="side-nav__chart side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons">insert_chart</i>
+											<h3>ANALYTICS</h3>
+										</a>	
+									</div>
+									<div class="side-nav__music side-nav">
+										<a href="#" class="icon-btn">
+											<i class="icon material-icons u-now-page_color">library_music</i>
+											<h3 class="u-now-page_color">RINGTONES</h3>
+										</a>	
+									</div>
+								</div>
+								
+								<!-- bottom -->
+								<div class="overlay__circle-set">
+									<div class="circle-set__small-circle">
+										<div class="small-circle__out-circle">
+											<div class="small-circle__in-circle">
+												<i class="icon material-icons">play_arrow</i>
+											</div>	
+										</div>
+									</div>
+									<div class="circle-set__big-circle">
+										<h4 class="time">25:00</h4>
+										<p>THE FIRST THING TO DO TODAY</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- overlay center -->
+							<div class="col-sm-4 col-sm-push-1">
+								<div class="overlay__tones-group">
+									<div class="tones-group__work tones-group">
+										<div class="work__title item-title">
+											<h4 class="title">WORK</h4>
+										</div>
+										<div class="work__tones tones">
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box">
+													</div>
+													<div class="tone__text">NONE</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box tone__check-box_using-out">
+														<div class="tone__check-box_using-in"></div>
+													</div>
+													<div class="tone__text">DEFAULT</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">ALARM</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">ALERT</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BEEP</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BELL</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BIRD</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BUGLE</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">DIGITAL</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">DROP</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">HORN</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">MUSIC</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">RING</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">WARNING</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">WHISTLE</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tones__break">
+										<div class="break__title item-title">
+											<h4 class="title">BREAK</h4>
+										</div>
+										<div class="break__tones tones">
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">NONE</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">DEFAULT</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">ALARM</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box tone__check-box_using-out">
+														<div class="tone__check-box_using-in"></div>
+													</div>
+													<div class="tone__text">ALERT</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BEEP</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BELL</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BIRD</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">BUGLE</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">DIGITAL</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">DROP</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">HORN</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">MUSIC</div>
+												</div>
+											</div>
+											<div class="row tone">
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">RING</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">WARNING</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="tone__check-box"></div>
+													<div class="tone__text">WHISTLE</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- overlay right -->
+							<a href="#!" class="popup-close">
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="side__text">
+						<h3>POMODORO</h3>
+					</div>
+				</div>		
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>
